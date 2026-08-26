@@ -1,0 +1,771 @@
+/*
+configurações básicas
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor1: #d19400;
+}
+
+@font-face{
+    src:url('assets/fontes/Monoton-Regular.ttf');
+    font-family:"Nova Fonte";
+}
+
+
+html, body{
+    height: 100%;
+    background-color: black;
+    font-family: 'Segoe UI';
+}
+
+h2{
+    font-weight: 600;
+}
+
+p{
+    font-weight: 100;
+}
+
+span{
+    font-weight: 100;
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 2%;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+}
+
+.botao{
+    border: none;
+    padding: 15px 50px;
+    margin-top: 25px;
+    border-radius: 50px;
+    background-color: var(--cor1);
+    color: white;
+    font-size: 18px;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+/*fumaças nas laterais da pagina
+
+
+
+#fumacal{
+    background-image: url(../assets/fumacal.gif);
+    background-repeat:no-repeat;
+    background-size: 280%;
+    background-position: 80% 40%;
+    width:350px;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 8%;
+}
+
+#fumacal2{
+    background-image: url(../assets/fumacal2.gif);
+    background-repeat:no-repeat;
+    background-size: 280%;
+    background-position: 70% 100%;
+    width:350px;
+    height:100%;
+    position: absolute;
+    top: 800px;
+    left: 0;
+    z-index: 1;
+    opacity: 8%;
+}
+
+#fumacar{
+    background-image: url(../assets/fumacar.gif);
+    background-repeat:no-repeat;
+    background-size: 280%;
+    width:350px;
+    height:100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 8%;
+}
+
+#fumacar2{
+    background-image: url(../assets/fumacar2.gif);
+    background-repeat:no-repeat;
+    background-size: 280%;
+    background-position: 05% 100%;
+    width:350px;
+    height:100%;
+    position: absolute;
+    top: 800px;
+    right: 0;
+    z-index: 1;
+    opacity: 8%;
+}
+
+*/
+
+/*
+abaixo a primeira seção da pagina onde estão o menu de paginas, banner principal e texto de apresentação
+*/
+
+section:nth-of-type(1){
+    height: 95%;
+    /*background-image: url(../assets/oni.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;*/
+    background-color: black;
+}
+
+video{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.555);
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    height: 90px;
+    display: block;
+    z-index: 999;
+    padding: 0 40px;
+}
+
+header a[href="index.html"]{
+    height: 30px;
+    margin-top: 30px;
+    float: left;
+}
+
+header a img{
+    height: 100%;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+header ul{
+    margin-top: 30px;
+    display: inline;
+    float: right;
+}
+
+header ul li{
+    display: inline;
+    margin: 0px 10px;
+}
+
+header ul li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.container-texto{
+    width: 20%;
+    max-width: max-content;
+    height: auto;
+    color: white;
+    position: absolute;
+    top: 45%;
+    right: 10%;
+    transform:  translate(-50%,-50%);
+    transition: 0.4s;
+}
+
+.container-texto h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.container-texto p{
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0px 11px;
+}
+
+/*
+abaixo a segunda seção do site
+*/
+
+section:nth-of-type(2){
+    height: 450px;
+    background-color: black;
+}
+
+.sec2-parte1{
+    width: 50%;
+    float: left;
+}
+
+.container-texto2{
+    width: auto;
+    color: white;
+    float: right;
+    margin-right: 20px;
+    margin-top: 80px;
+}
+
+.container-texto2 h2{
+    font-size: 30px;
+    font-weight: 400;
+    height: auto;
+    color: white;
+}
+
+.container-texto2 span{
+    font-size: 20px;
+    height: auto;
+    color: white;
+}
+
+.container-texto2 ul li:not(:nth-of-type(5)){
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+    list-style-position: inside;
+}
+
+.container-texto2 ul li:nth-of-type(5){
+    list-style-type: none;
+}
+
+.sec2-parte2{
+    height: 490px;
+    width: 50%;
+    max-width: 420px;
+    float: left;
+    background-image: url(../assets/lendario.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/*
+abaixo uma terceira seção mais extensa com mais detalhes sobre o site
+*/
+
+.sec3{
+    position: relative;
+}
+
+.artigo-sec3{
+    height: 530px;
+    background-image: url('../assets/oni.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+    padding-top: 145px;
+}
+
+.artigo-sec3 h2{
+    margin-top: 0px;
+    font-size: 40px;
+}
+
+.artigo-sec3 p{
+    width: 100%;
+    max-width: 1300px;
+    max-width: 1030px;
+    margin-top: 10px;
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+/*
+UM EXIBILOR DE IMAGENS COM SLIDE E SELETOR
+*/
+
+.slider {
+    margin: 0 auto;
+    position: relative;
+    height: 55vw;
+    width: 88vw;
+    max-height: 660px;
+    max-width: 1000px;
+    background-color: black;
+    border: 1px solid black;
+    box-shadow: 10px 10px 29px 0px rgba(0, 0, 0, 0.65);
+    -webkit-box-shadow: 10px 10px 29px 0px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: 10px 10px 29px 0px rgba(0, 0, 0, 0.65);
+    margin-bottom: -50px;
+}
+
+.indice {
+    width: 2vw;
+    height: 2vw;
+    max-width: 25px;
+    max-height: 25px;
+    border-radius: 50%;
+    background-color: grey;
+    float: left;
+    margin: 0.5vw 0 0 1vw;
+    cursor: pointer;
+}
+
+.slide-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+    width: 88vw;
+    max-height: 563px;
+    max-width: 1000px;
+}
+
+/*
+artigo contendo mais textos dividido em duas partes
+*/
+
+.artigo3-sec3{
+    height: max-content;
+    min-height: 100px;
+}
+
+.container-parte1{
+    float: left;
+    min-height: 400px;
+    width: 50%;
+    padding: 100px 20px 100px 20px;
+    background-color: grey;
+    color: white;
+}
+
+.container-parte1 div{
+    float: right;
+    max-width: 600px;
+}
+
+.container-parte1 p{
+    margin-top: 5px;
+    font-size: 21px;
+    
+}
+
+.container-parte1 h2{
+    font-size: 30px;
+}
+
+/*AUTOR*/
+
+.container-parte2{
+    float: left;
+    min-height: 400px;
+    width: 50%;
+    padding: 100px 5px 20px 20px;
+    color: black;
+}
+
+.container-overflow{
+    width: 100%;
+    overflow:hidden;
+
+}
+
+.container-equipe{
+    all: inherit;
+}
+
+.container-autor{
+    float: left;
+}
+
+.container-titulos{
+    width: max-content;
+    display: inline-block;
+}
+
+.container-equipe h2{
+    font-size: 30px;
+    height: 38px;
+    display: block;
+}
+
+.container-equipe span{
+    font-size: 16px;
+    display: block;
+}
+
+.foto-perfil{
+    width: 40px;
+    height: 40px;
+    background-image: url("../assets/onicut2.png");
+    background-size: contain;
+    display: inline-block;
+}
+
+.container-equipe p{
+    margin-top: 5px;
+    font-size: 21px;
+    max-width: 600px;
+
+}
+
+.container-indice-autor{
+    width: 100%;
+    height: 10px;
+    margin-top: 10px;
+}
+
+.indice2{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(95, 95, 95);
+    margin-right: 10px;
+    display: inline-block;
+}
+
+/*
+abaixo a quarta seção, de feedback e localização
+*/
+
+.container-sec4{
+    color: white;
+    background-color: black;
+    padding: 80px 10px;
+}
+
+.form{
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+form{
+    max-width: 550px;
+    float: right;
+}
+
+form h2{
+    width: 70%;
+}
+
+.form p{
+    width: 70%;
+    margin-top: 10px;
+}
+
+.form input{
+    width: 90%;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.form textarea{
+    margin-top: 15px;
+    width: 90%;
+    height: 250px;
+}
+
+.form button{
+    display: block;
+}
+
+.localizacao{
+    height: auto;
+    width: 50%;
+    float: left;
+}
+
+.container-mapa{
+    max-width: 500px;
+}
+
+.localizacao h2{
+    text-align: left;
+    margin-left: 25px;
+}
+
+.mapa{
+    margin-top: 15px;
+    height: 600px;
+    width: 100%;
+    background-color: white;
+}
+
+/*
+abaixo o rodapé
+*/
+
+footer{
+    height: 100px;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+/*
+abaixo as media queries
+*/
+
+@media screen and (max-width: 1860px){
+
+	.container-texto{
+        text-align: center;
+        min-width: 500px;
+        height: auto;
+        color: white;
+        position: absolute;
+        top: 82%;
+        left: 50%;
+        transform:  translate(-50%,-50%);
+    }
+
+}
+
+@media screen and (max-width: 890px){
+
+	.container-texto{
+        text-align: center;
+        min-width: 500px;
+        height: auto;
+        color: white;
+        position: absolute;
+        top: 82%;
+        left: 50%;
+        transform:  translate(-50%,-50%);
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .menus{
+        width: 100%;
+    }
+
+    header .menu{
+        height: 40px;
+        width: 40px;
+        float: right;
+        margin-top: 30px;
+        background-image: url(../assets/menu.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    .menu-desktop{
+        display: none;
+    }
+
+    /*atacando o menu dedicado que usa jquery*/
+
+    .menu-mobile{
+        width: 100%;
+        margin-top: 10px;
+        display: inline-block;
+        float: inherit;
+    }
+
+    .menu-mobile li{
+        width: 100%;
+        height: 35px;
+        text-align: center;
+        display: block;
+        margin: 0px;
+        border-bottom: solid black 1px;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .menu-mobile li:hover{
+        background-color: var(--cor1);
+        transition: 0.5s;
+    }
+
+    .menu-mobile li:hover a{
+        color: black;
+        transition: 0.5s;
+    }
+
+    .menu-mobile li a{
+        height: 100px;
+        width: 300px;
+        color: var(--cor1);
+        font-size: 18px;
+        font-weight: 100;
+        text-decoration: none;
+        vertical-align: -7px;
+        transition: 0.5s;
+    }
+
+    /*pra ser usado sem jquery pro menu mobile aparecer quando o mouse for colocado por cima tanto do menu hamburguer quanto da propria lista. precisa remover o menu mobile do html tambem.
+
+    .menu:hover + ul{
+        transition: 0.5s;
+        opacity: inherit;
+    }
+
+    header ul li{
+        width: 100%;
+        height: 35px;
+        text-align: center;
+        display: block;
+        margin: 0px;
+        border-bottom: solid black 1px;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    header ul li:hover{
+        background-color: var(--cor1);
+        transition: 0.5s;
+    }
+
+    header ul li:hover a{
+        color: black;
+        transition: 0.5s;
+    }
+
+    header ul li a{
+        height: 100px;
+        width: 300px;
+        color: var(--cor1);
+        font-size: 18px;
+        font-weight: 100;
+        text-decoration: none;
+        vertical-align: -7px;
+        transition: 0.5s;
+    }
+    */
+
+    /*aqui é editado a seção 2*/
+
+    section:nth-of-type(2){
+        text-align: center;
+    }
+
+    .sec2-parte1{
+        margin: 0  auto;
+        float: inherit;
+        width: 100%;
+    }
+
+    .sec2-parte2{
+        display: none;
+    }
+
+    .container-texto2{
+        text-align: center;
+        width: 100%;
+        margin: inherit;
+        margin-top: 50px;
+    }
+
+    /*terceira seção*/
+
+    .artigo-sec3 p{
+        font-size: 22px;
+    }
+
+    /*mapa e feedback*/
+
+    .form{
+        float: inherit;
+        width: 100%;
+        display: block;
+        height: 600px;        
+    }
+
+    form{
+        width: 80%;
+        max-width: inherit;
+        float: inherit;
+        margin: 0 auto;
+    }
+
+    form h2, .form p{
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .form input{
+        width: 100%;
+    }
+
+    .form textarea{
+        width: 100%;
+    }
+
+    .form button{
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .localizacao{
+        float: inherit;
+        width: 100%;
+        display: block;
+        height: 500px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .localizacao h2{
+        text-align: center;
+        margin-left: inherit;
+    }
+
+    .container-mapa{
+        width: 80%;
+        max-width: inherit;
+        margin: 0 auto;
+    }
+
+    .mapa{
+        height: 400px;
+    }
+
+}
+
+@media screen and (max-width: 580px){
+
+    .container-parte1{
+        height: 300px;
+        min-height: inherit;
+        padding: 60px 20px 100px 20px;
+        float: inherit;
+        display: block;
+        width: 100%;
+    }
+
+    .container-parte2{
+        height: 300px;
+        min-height: inherit;
+        float: inherit;
+        display: block;
+        width: 100%;
+        padding: 60px 20px 60px 20px;
+    }
+}
